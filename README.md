@@ -3,7 +3,7 @@
  
  Bearer Token authentication url :https://article-service.herokuapp.com/writer/login
  
-  sample  request 
+  sample  POST request 
     {
      "username":"austine",
       "password":"obi2345"
