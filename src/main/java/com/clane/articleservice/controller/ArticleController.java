@@ -148,7 +148,7 @@ public class ArticleController {
 
     @GetMapping(value = "/getAll", produces = "Application/json", consumes = "Application/json")
     public ResponseEntity<?> findAll(@RequestParam("start") int start, @RequestParam("limit") int limit) {
-        List<Articles> list = clientUtils.getAllArticle(start, limit, "wrritenBy");
+        List<Articles> list = clientUtils.getAllArticle(start, limit, "id");
 
         return appUtils.returnSuccessResponse(list,null);
 

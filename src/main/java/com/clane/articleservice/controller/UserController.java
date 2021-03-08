@@ -105,7 +105,7 @@ public class UserController {
     
     @GetMapping(value = "/getAll", produces = "Application/json", consumes = "Application/json")
     public ResponseEntity<?> findAll(@RequestParam("start") int start, @RequestParam("limit") int limit) {
-        List<User> list = clientUtils.getAllUser(start, limit, "wrritenBy");
+        List<User> list = clientUtils.getAllUser(start, limit, "id");
 
         return appUtils.returnSuccessResponse(list, null);
 
